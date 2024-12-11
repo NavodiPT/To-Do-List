@@ -1,0 +1,149 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Home container */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff, #e4edf7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.home h2 {
+  color: #4a4e69;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid #9a8c98;
+  padding-bottom: 10px;
+}
+
+/* Create form */
+.create-form {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.create-form input {
+  width: 300px;
+  padding: 12px;
+  border: 2px solid #9a8c98;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.create-form input:focus {
+  border-color: #4a4e69;
+  box-shadow: 0px 0px 8px #4a4e69;
+}
+
+.create-form button {
+  padding: 12px 24px;
+  background-color: #4a4e69;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-form button:hover {
+  background-color: #9a8c98;
+  transform: scale(1.05);
+}
+
+/* Todo task styles */
+.task {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px 0;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.task:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+/* Checkbox container */
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox p {
+  margin-left: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4a4e69;
+}
+
+.line_through {
+  text-decoration: line-through;
+  color: #a4a4a4;
+}
+
+/* Icon styles */
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.task-icon {
+  color: #9a8c98;
+}
+
+.delete-icon {
+  color: #d9534f;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #4a4e69;
+}
+
+/* No record message */
+.home div h2 {
+  color: #9a8c98;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .create-form input {
+    width: 250px;
+  }
+
+  .task {
+    width: 300px;
+  }
+}
